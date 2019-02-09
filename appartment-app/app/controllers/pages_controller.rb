@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
-  def unprotected
-  end
+  skip_before_action :verify_authenticity_token
 
-  def protected
+  def mainapp
   end
 end

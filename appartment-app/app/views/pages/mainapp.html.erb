@@ -1,0 +1,6 @@
+
+<% if user_signed_in? %>
+<%= react_component('Authenticated', props: {'logged_in': true})%>
+<% else %>
+<%= react_component('Unauthenticated', props: {'logged_in': false}) %>
+<% end %>
